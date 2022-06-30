@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": ["esnext", "esnext.asynciterable", "esnext.array"],
+    "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "pretty": true,
+    "skipLibCheck": true,
+    "target": "es2018"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "src/**/*.spec.ts", "src/**/*.test.ts", "prisma"]
+}

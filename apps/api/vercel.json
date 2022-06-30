@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "regions": ["syd1"],
+  "rewrites": [{ "source": "/(.*)", "destination": "/api/index.ts" }]
+}

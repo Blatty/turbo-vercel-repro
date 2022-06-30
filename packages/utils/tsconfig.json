@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": ["esnext", "esnext.asynciterable", "esnext.array"],
+    "module": "commonjs",
+    "rootDir": "./",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "pretty": true,
+    "skipLibCheck": true,
+    "target": "es2018"
+  },
+  "include": ["."],
+  "exclude": ["dist", "node_modules"]
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", "build/**", ".next/**", "public/**"]
+    },
+    "@acme/api#build": {
+      "dependsOn": ["^build", "@acme/utils#build"],
+      "outputs": ["dist/**", "build/**"]
+    },
+    "@acme/utils#build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "start": {
+      "cache": false
+    },
+    "dev": {
+      "cache": false
+    }
+  },
+  "baseBranch": "origin/main",
+  "globalDependencies": ["$GITHUB_TOKEN", "tsconfig.json"]
+}
